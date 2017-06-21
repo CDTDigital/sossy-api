@@ -10,13 +10,8 @@ const jwtOptions = {
   secretOrKey:    process.env.JWT_SECRET
 };
 
-let authorizedUsers;
-try {
-  authorizedUsers = JSON.parse(process.env.JWT_USERS);
-} catch(e) {
-  console.log('Please set JTW_USERS as an environmental variable! Or change the strategy for setting acceptable jwt users.');
-  throw(e);
-}
+// NOTE: we may need to switch to having app features that manage these usernames
+let authorizedUsers = [process.env.JWT_USER];
 
 function findUser(jwtUsername) {
   return authorizedUsers.find((name) => {
