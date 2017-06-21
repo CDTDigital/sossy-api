@@ -1,0 +1,9 @@
+@import "ca-style-mobile";
+
+@media screen and (min-width: $tablet-break-point), screen and (max-height: $tablet-break-point) and (orientation: landscape) {
+  @import "ca-style-tablet";
+}
+
+@media screen and (min-width: $desktop-break-point), screen and (min-height: $desktop-break-point) and (orientation: landscape) {
+  @import "ca-style-desktop";
+}

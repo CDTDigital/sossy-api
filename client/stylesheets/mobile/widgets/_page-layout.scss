@@ -1,0 +1,12 @@
+body {
+  background-color: $neutral-50;
+}
+
+#page {
+  @include line;
+  background-color: $lightest-color;
+}
+
+.content {
+  min-height: 500px;
+}

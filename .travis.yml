@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "7"
+cache:
+  directories:
+    - "node_modules"
+env:
+  - JWT_SECRET=s3kret
+script:
+  - npm run test:coverage
+after_success:
+  - npm install -g codeclimate-test-reporter
+  - codeclimate-test-reporter < coverage/lcov.info

@@ -1,0 +1,21 @@
+---
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  fixme:
+    enabled: true
+ratings:
+  paths:
+  - server/**/*
+  - client/**/*
+  - ./**/*
+exclude_paths:
+- public/**/*
+- test/**/*

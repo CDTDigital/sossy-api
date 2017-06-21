@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>California Stylesheet Demo</title>
+  <meta name="viewport" content="initial-scale=1">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/ico">
+  <link rel="stylesheet" href="/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+  <style>
+    @media (min-width: 640px) {
+      .column-inner {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      .layout-inner {
+        padding: 15px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="page">
+    <div id='header'>
+      <div class='inner'>
+        <img class='ca-gov-logo' alt='CA.gov' src="https://cdt.ca.gov/services/wp-content/themes/CAWeb/images/system/logo.svg">
+      </div>
+    </div>
+    <div class='inner'>
+      <div class='unit m-row t-size-3-5 d-size-2-3'>
+        <div class="block inner-right">
+          <h1>California Styling</h1>
+          <hr>
+          <p>
+            <em><a href="TBA" target='_blank'>California Style</a></em>
+            is a responsive design CSS framework. It is culled from 4 years of repeatedly crafting
+            mobile first designs, that layered on tablet and desktop functionality. With several great organizations,
+            we reinvented this wheel. Each time it got more round and simple.
+          </p>
+
+          <p>
+            The framework foundation is based on Stubornella's awesome
+            <a href="https://github.com/stubbornella/oocss" target="_blank">OOCSS</a>, which
+            separates concerns of box width from those of box padding &amp; margin. This makes
+            dealing with the IE box model differences pretty trivial. Developers
+            need to get in the habit and discipline of always creating a nested div for padding,
+            border and margin. But once that habit is well understood, designing is easy.
+          </p>
+
+          <p>
+            On top of that box model and grid managment system, we added a responsive design framework.
+            There are a set of sizes defined for the base case (mobile), and then additional sizes for
+            tablet and desktop. Front-end developers can change the size of element per layout. In mobile,
+            a container can show up at the bottom of the page, and in other layouts it can be a side-menu.
+            This page is one of those examples. The basic work can be done with markup and styling classes
+            alone.
+          </p>
+        </div>
+      </div>
+      <div class='unit m-row t-size-2-5 d-size-1-3'>
+        <div class='inner border rounded'>
+          <h2>Sidebar!</h2>
+          <hr>
+
+          <form action='#' class='block inner-bottom'>
+            <h3>Sign in</h3>
+            <label for='username'>Username</label>
+            <div class='input-container'>
+              <input name='username' type='text' placeholder='username'>
+            </div>
+
+            <label for='password'>Password</label>
+            <div class='input-container'>
+              <input name='password' type='password' placeholder='password'>
+            </div>
+
+            <div class='shadow-container'>
+              <input type='submit' value='Sign in'>
+            </div>
+          </form>
+          <hr>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisi ullamcorper velit gravida consectetur. Mauris cursus posuere urna eu aliquam. Aenean metus nulla, ullamcorper vel faucibus a, vulputate ac dui. Phasellus tempor dignissim odio, vel lacinia turpis dapibus a. In hac habitasse platea dictumst.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='inner layout-inner'>
+        <div class='layout-inner inner'>
+          <h1 class="t-hidden d-hidden">Mobile View</h1>
+          <h1 class="m-hidden d-hidden">Tablet View</h1>
+          <h1 class="m-hidden t-hidden">Desktop View</h1>
+        </div>
+
+        <div class='m-row t-unit t-size-1-2 d-unit d-size-1-3'>
+          <div class='block column-inner'>
+            <div class='inner border rounded'>
+              <h4>Section 1</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisi ullamcorper velit gravida consectetur. Mauris cursus posuere urna eu aliquam. Aenean metus nulla, ullamcorper vel faucibus a, vulputate ac dui. Phasellus tempor dignissim odio, vel lacinia turpis dapibus a. In hac habitasse platea dictumst. Donec purus erat, fermentum sit amet maximus eu, gravida vitae ex. Ut sed lectus vitae turpis vulputate tincidunt. Pellentesque non egestas lacus, non porttitor dui. Aliquam volutpat lacus eget orci tincidunt, sit amet accumsan neque facilisis.
+              </p><p>
+                Nam quis ante non velit egestas venenatis. Praesent eleifend ante quis metus venenatis, dictum pharetra justo pretium. Vestibulum vitae egestas sem, ut iaculis massa. Donec sit amet erat in mi commodo commodo. Sed non diam in leo feugiat congue. Mauris tempus non arcu vitae malesuada. Maecenas non diam ac urna imperdiet hendrerit porttitor et felis. Sed ipsum ipsum, placerat ac diam eget, malesuada faucibus enim. Vivamus viverra, urna sed feugiat bibendum, ante mi hendrerit lorem, sit amet maximus diam justo ut est. In sollicitudin quis purus vel fringilla.
+              </p><p>
+                Vivamus porta luctus massa eu bibendum. Sed sodales vulputate efficitur. Phasellus semper tempor nisi in convallis. Cras dapibus fringilla odio sed fringilla. Phasellus a fringilla urna. Nunc vulputate viverra imperdiet. Suspendisse molestie, neque non auctor viverra, odio arcu volutpat ligula, sed pellentesque felis ante nec velit. Sed semper eleifend elit, vel eleifend nunc gravida at. Morbi ornare a nulla a rhoncus. Quisque dignissim dolor eget lorem ullamcorper auctor.
+              </p><p>
+                In sit amet orci et lectus tempor vehicula eu et augue. Quisque id est eleifend, tempor justo et, molestie nibh. Phasellus mattis hendrerit ultricies. Donec nec eros sed est euismod consequat. Nulla facilisi. Nulla quis semper turpis. Morbi vitae pellentesque risus. Vestibulum sodales, ante at imperdiet pulvinar, ipsum justo laoreet ex, non viverra metus nunc quis nunc.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class='spacer t-hidden d-hidden m-row'></div>
+        <div class='m-row t-unit t-size-1-2 d-unit d-size-1-3'>
+          <div class='block column-inner'>
+            <div class='inner border rounded'>
+              <h4>Section 2</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisi ullamcorper velit gravida consectetur. Mauris cursus posuere urna eu aliquam. Aenean metus nulla, ullamcorper vel faucibus a, vulputate ac dui. Phasellus tempor dignissim odio, vel lacinia turpis dapibus a. In hac habitasse platea dictumst. Donec purus erat, fermentum sit amet maximus eu, gravida vitae ex. Ut sed lectus vitae turpis vulputate tincidunt. Pellentesque non egestas lacus, non porttitor dui. Aliquam volutpat lacus eget orci tincidunt, sit amet accumsan neque facilisis.
+              </p><p>
+                Nam quis ante non velit egestas venenatis. Praesent eleifend ante quis metus venenatis, dictum pharetra justo pretium. Vestibulum vitae egestas sem, ut iaculis massa. Donec sit amet erat in mi commodo commodo. Sed non diam in leo feugiat congue. Mauris tempus non arcu vitae malesuada. Maecenas non diam ac urna imperdiet hendrerit porttitor et felis. Sed ipsum ipsum, placerat ac diam eget, malesuada faucibus enim. Vivamus viverra, urna sed feugiat bibendum, ante mi hendrerit lorem, sit amet maximus diam justo ut est. In sollicitudin quis purus vel fringilla.
+              </p><p>
+                Vivamus porta luctus massa eu bibendum. Sed sodales vulputate efficitur. Phasellus semper tempor nisi in convallis. Cras dapibus fringilla odio sed fringilla. Phasellus a fringilla urna. Nunc vulputate viverra imperdiet. Suspendisse molestie, neque non auctor viverra, odio arcu volutpat ligula, sed pellentesque felis ante nec velit. Sed semper eleifend elit, vel eleifend nunc gravida at. Morbi ornare a nulla a rhoncus. Quisque dignissim dolor eget lorem ullamcorper auctor.
+              </p><p>
+                In sit amet orci et lectus tempor vehicula eu et augue. Quisque id est eleifend, tempor justo et, molestie nibh. Phasellus mattis hendrerit ultricies. Donec nec eros sed est euismod consequat. Nulla facilisi. Nulla quis semper turpis. Morbi vitae pellentesque risus. Vestibulum sodales, ante at imperdiet pulvinar, ipsum justo laoreet ex, non viverra metus nunc quis nunc.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class='spacer d-hidden m-row t-row'></div>
+        <div class='m-row t-unit t-size-1-2 d-unit d-size-1-3'>
+          <div class='block column-inner'>
+            <div class='inner border rounded'>
+              <h4>Section 3</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisi ullamcorper velit gravida consectetur. Mauris cursus posuere urna eu aliquam. Aenean metus nulla, ullamcorper vel faucibus a, vulputate ac dui. Phasellus tempor dignissim odio, vel lacinia turpis dapibus a. In hac habitasse platea dictumst. Donec purus erat, fermentum sit amet maximus eu, gravida vitae ex. Ut sed lectus vitae turpis vulputate tincidunt. Pellentesque non egestas lacus, non porttitor dui. Aliquam volutpat lacus eget orci tincidunt, sit amet accumsan neque facilisis.
+              </p><p>
+                Nam quis ante non velit egestas venenatis. Praesent eleifend ante quis metus venenatis, dictum pharetra justo pretium. Vestibulum vitae egestas sem, ut iaculis massa. Donec sit amet erat in mi commodo commodo. Sed non diam in leo feugiat congue. Mauris tempus non arcu vitae malesuada. Maecenas non diam ac urna imperdiet hendrerit porttitor et felis. Sed ipsum ipsum, placerat ac diam eget, malesuada faucibus enim. Vivamus viverra, urna sed feugiat bibendum, ante mi hendrerit lorem, sit amet maximus diam justo ut est. In sollicitudin quis purus vel fringilla.
+              </p><p>
+                Vivamus porta luctus massa eu bibendum. Sed sodales vulputate efficitur. Phasellus semper tempor nisi in convallis. Cras dapibus fringilla odio sed fringilla. Phasellus a fringilla urna. Nunc vulputate viverra imperdiet. Suspendisse molestie, neque non auctor viverra, odio arcu volutpat ligula, sed pellentesque felis ante nec velit. Sed semper eleifend elit, vel eleifend nunc gravida at. Morbi ornare a nulla a rhoncus. Quisque dignissim dolor eget lorem ullamcorper auctor.
+              </p><p>
+                In sit amet orci et lectus tempor vehicula eu et augue. Quisque id est eleifend, tempor justo et, molestie nibh. Phasellus mattis hendrerit ultricies. Donec nec eros sed est euismod consequat. Nulla facilisi. Nulla quis semper turpis. Morbi vitae pellentesque risus. Vestibulum sodales, ante at imperdiet pulvinar, ipsum justo laoreet ex, non viverra metus nunc quis nunc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='footer'>
+      <div class='inner'>
+        <h4>Some links</h4>
+      </div>
+    </div>
+  </div>
+</body>
+

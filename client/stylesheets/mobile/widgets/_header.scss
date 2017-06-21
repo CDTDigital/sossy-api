@@ -1,0 +1,16 @@
+#header {
+  background-color: $accent-2;
+  height: 4 * $em;
+  color: $lightest-color;
+  border-bottom: 4px solid $accent;
+
+  img.ca-gov-logo {
+    height: 56px;
+  }
+}
+
+#footer {
+  background-color: $accent-2;
+  color: $lightest-color;
+  border-top: 4px solid $accent;
+}
