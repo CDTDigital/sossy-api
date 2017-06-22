@@ -8,6 +8,8 @@ delivering the motor voter data to SOS.
 React, JWT authentication for the API, and fakery.
 
 Deployed at [https://sossy-api.herokuapp.com/](https://sossy-api.herokuapp.com/).
+Deploys happen automatically via github integrations. When CI passes,
+the deploy goes to heroku.
 
 ## Setup
 
