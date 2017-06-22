@@ -1,6 +1,6 @@
 # Sossy API
 
-[![Build Status](https://travis-ci.org/CDTDigital/sossy-api.svg?branch=master)](https://travis-ci.org/CDTDigital/sossy-api) [![Code Climate](https://codeclimate.com/github/CDTDigital/sossy-api/badges/gpa.svg)](https://codeclimate.com/github/CDTDigital/sossy-api)
+[![Build Status](https://travis-ci.org/CDTDigital/sossy-api.svg?branch=master)](https://travis-ci.org/CDTDigital/sossy-api) [![Code Climate](https://codeclimate.com/github/CDTDigital/sossy-api/badges/gpa.svg)](https://codeclimate.com/github/CDTDigital/sossy-api) [![Test Coverage](https://codeclimate.com/github/CDTDigital/sossy-api/badges/coverage.svg)](https://codeclimate.com/github/CDTDigital/sossy-api/coverage)
 
 This is a mock application with authentication and fake data for
 delivering the motor voter data to SOS.
