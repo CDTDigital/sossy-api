@@ -1,9 +1,13 @@
-# Node.js Substrate
+# Sossy API
 
-[![Build Status](https://travis-ci.org/CDTDigital/node-substrate.svg?branch=master)](https://travis-ci.org/CDTDigital/node-substrate) [![Code Climate](https://codeclimate.com/github/CDTDigital/node-substrate/badges/gpa.svg)](https://codeclimate.com/github/CDTDigital/node-substrate)
+[![Build Status](https://travis-ci.org/CDTDigital/sossy-api.svg?branch=master)](https://travis-ci.org/CDTDigital/sossy-api) [![Code Climate](https://codeclimate.com/github/CDTDigital/sossy-api/badges/gpa.svg)](https://codeclimate.com/github/CDTDigital/sossy-api)
 
-This is a base application for quickly building node applications using
-our styles, React, JWT authentication for the API, and ...
+This is a mock application with authentication and fake data for
+delivering the motor voter data to SOS.
+
+React, JWT authentication for the API, and fakery.
+
+Deployed at [https://sossy-api.herokuapp.com/](https://sossy-api.herokuapp.com/).
 
 ## Setup
 
