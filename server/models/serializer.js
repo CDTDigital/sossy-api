@@ -36,19 +36,35 @@ class Serializer {
   }
 
   mapVoterPrefs() {
-    return Object.assign(
+    let prefs = Object.assign(
       {},
       this.aggregate.voterPreference,
       {voter_language: this.aggregate.voterPreference.language}
     );
+
+    delete prefs.eligible;
+
+    return prefs;
   }
 
   mapApplication() {
-    return Object.assign(
+    let app = Object.assign(
       {},
       this.aggregate.application,
       {application_language: this.aggregate.application.language}
     );
+
+    delete app.type;
+
+    console.log(this.aggregate.addresses.length);
+
+    let numberOfAddresses = Object.keys(this.aggregate.addresses).length;
+
+    app.coa = numberOfAddresses > 2;
+    app.process_date = app.updated_at.toDateString();
+    app.process_time = app.updated_at.toTimeString();
+
+    return app;
   }
 
   mapEmail() {
