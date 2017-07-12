@@ -33,7 +33,6 @@ const PARTIES = [
   'American Independent',
   'Conservative',
   'Democratic',
-  'Democratic Socialist',
   'Green',
   'Libertarian',
   'Republican',
