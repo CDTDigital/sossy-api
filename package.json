@@ -9,6 +9,7 @@
     "dev": "concurrently --kill-others \"npm run webpack-watch\" \"npm start\"",
     "test": "npm run test:server",
     "test:server": "node_modules/.bin/mocha --recursive test/server",
+    "test:cucumber": "node_modules/.bin/cucaroo",
     "test:coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --recursive test/server",
     "lint": "node_modules/.bin/jshint test/ server/ server.js index.js"
   },
@@ -24,7 +25,7 @@
     "concurrently": "^3.4.0",
     "css-loader": "^0.28.4",
     "cssurf": "https://github.com/CDTDigital/cssurf.git",
-    "cucaroo": "https://github.com/baccigalupi/cucaroo.git#substepping",
+    "cucaroo": "git+https://github.com/baccigalupi/cucaroo.git#substepping",
     "extract-text-webpack-plugin": "^2.1.0",
     "istanbul": "^0.4.5",
     "jshint": "^2.9.4",
