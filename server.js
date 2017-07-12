@@ -9,6 +9,7 @@ const bodyParser  = require('body-parser');
 const morgan      = require('morgan');
 const passport    = require('passport');
 const jwtStrategy = require('./server/config/jwt-strategy').strategy;
+const addLogging  = require('./server/config/add-logging');
 
 const layout      = fs.readFileSync(path.resolve(__dirname, 'server/templates/layout.html')).toString();
 let   server      = express();
@@ -16,7 +17,7 @@ let   server      = express();
 passport.use(jwtStrategy);
 server.use(passport.initialize());
 server.use(bodyParser.json());
-server.use(morgan('combined'));
+addLogging(server, env);
 
 server.port = env.port;
 server.environment  = env.env;

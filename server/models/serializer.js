@@ -56,8 +56,6 @@ class Serializer {
 
     delete app.type;
 
-    console.log(this.aggregate.addresses.length);
-
     let numberOfAddresses = Object.keys(this.aggregate.addresses).length;
 
     app.coa = numberOfAddresses > 2;
