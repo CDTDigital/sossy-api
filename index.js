@@ -2,6 +2,6 @@
 
 const server = require('./server');
 
-server.listen(server.port, () => {
+server.start(() => {
   console.log('Starting server in ' + server.environment + ' mode: Listening on ' + server.port);
 });

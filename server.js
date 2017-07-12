@@ -68,4 +68,10 @@ function mockDataController(req, res) {
 server.get('/mock-unprotected', mockDataController);
 server.get('/mock-protected', authenticate, mockDataController);
 
+server.start = (callback) => {
+  let listener = server.listen(server.port, () => {
+    callback(listener);
+  });
+};
+
 module.exports = server;
