@@ -14,12 +14,19 @@ const jwtOptions = {
 let authorizedUsers = [process.env.JWT_USER];
 
 function findUser(jwtUsername) {
-  return authorizedUsers.find((name) => {
+  let user = authorizedUsers.find((name) => {
     return name === jwtUsername;
-  }) || false;
+  });
+
+  if (!user) {
+    console.log('Authorization Error: User not found');
+  }
+
+  return user || false;
 }
 
 function authorizeApiUsage(payload, next) {
+  console.log('Authorization: payload found', payload);
   let user = findUser(payload.user);
   next(null, user);
 }
