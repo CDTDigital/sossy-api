@@ -29,7 +29,12 @@ server.get('/', (req, res) => {
 
 let authenticate = passport.authenticate('jwt', { session: false });
 
-server.get('/protected', authenticate, function(req, res){
+let readRequestAuthorization = function(req, res, next) {
+  console.log(req.get('Authorization'));
+  next();
+}
+
+server.get('/protected', readRequestAuthorization, authenticate, function(req, res){
   res.json({hello: 'protected world'});
 });
 
